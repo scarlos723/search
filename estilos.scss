@@ -1,0 +1,126 @@
+$text_color_butoms_hover: rgb(66,133,244);
+$background_color_button: gray;
+
+%general_buttom{
+    margin: 20px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    background-color:$background_color_button;
+    border-radius: 20px;
+    border: 1px solid $background_color_button;
+}
+
+%general_input{
+    border: 1px dotted rgb(180, 176, 176);
+    border-radius: 20px;
+    width: 600px;
+    height: 40px;
+    text-align: center;
+    color: rgb(59, 59, 59);
+}
+
+
+
+.button_custom{
+    @extend %general_buttom
+}
+
+.button_custom:hover {
+    
+    color: $text_color_butoms_hover;
+    background-color: white;
+    box-shadow: 0px 0px 5px white;
+    border: 1px none;
+
+}
+
+.custom_buttom_adv{
+    margin: 10px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    background-color: #4372df;
+    border-radius: 20px;
+    border: 1px solid #4372df;
+
+}
+
+.custom_buttom_adv:hover {
+    
+    color: white;
+    background-color: #4372df;
+    box-shadow: 0px 0px 5px white;
+    border: 1px none;
+}
+
+.input_custom {
+  @extend %general_input;
+  background-image: url('images/logo_lupa.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  
+}
+
+input:hover {
+    border: none;
+    box-shadow: 0px 0px 5px white;
+    
+}
+
+
+div > .container{
+    align-content: center;
+    text-align: center;
+}
+
+#logo_box{
+    margin: 10px;
+}
+
+#top_bar{
+    padding: 10px 10px;
+    text-align: left;
+   
+}
+
+#blank_bar{
+    padding: 80px 10px;
+    text-align: right;
+    
+}
+
+.container{
+    background-color: rgb(32, 32, 32);
+    
+  }
+.cont_advanced{
+    margin: 10px 10px;
+    padding: 100px 10px;
+    
+}
+.col-8, .col-4{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+
+a {
+    margin: 5px 10px;
+    color: red;
+    
+}
+a>img{
+    width: 20px;
+}
+
+label,h6{
+    color: grey;
+}
